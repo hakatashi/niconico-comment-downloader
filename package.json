@@ -1,0 +1,24 @@
+{
+  "name": "niconico-comment-downloader",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hakatashi/niconico-comment-downloader.git"
+  },
+  "keywords": [
+    "niconico",
+    "comment",
+    "downloader"
+  ],
+  "author": "hakatashi <hakatasiloving@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hakatashi/niconico-comment-downloader/issues"
+  },
+  "homepage": "https://github.com/hakatashi/niconico-comment-downloader#readme"
+}
