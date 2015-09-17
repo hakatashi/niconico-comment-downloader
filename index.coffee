@@ -22,15 +22,14 @@ class Downloader
 			form:
 				mail: auth.username
 				password: auth.password
-			followAllRedirects: true
-		, (error, response, body) ->
+		, (error, response, body) =>
 			if error
 				return callback error, response
 
-			if response.statusCode isnt 200
-				return callback new Error('Status code is not OK'), response
+			if not (300 <= response.statusCode < 400)
+				return callback new Error('Status code is not redirect'), response
 
-			if body.indexOf('class="notice error"') isnt -1
+			if response.headers.location.indexOf('https://account.nicovideo.jp') isnt -1
 				return callback new Error('Invalid auth info'), response
 
 			return callback null, response
