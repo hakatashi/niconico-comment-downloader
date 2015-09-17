@@ -20,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/hakatashi/niconico-comment-downloader/issues"
   },
-  "homepage": "https://github.com/hakatashi/niconico-comment-downloader#readme"
+  "homepage": "https://github.com/hakatashi/niconico-comment-downloader#readme",
+  "dependencies": {
+    "request": "^2.62.0",
+    "xml2js": "^0.4.12",
+    "xtend": "^4.0.0"
+  },
+  "devDependencies": {
+    "should": "^7.1.0"
+  }
 }
